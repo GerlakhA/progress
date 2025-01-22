@@ -48,8 +48,8 @@ export default class CircularProgress {
 			value = 0
 		}
 
-		if (value.startsWith('0') && value.length > 1) {
-			value = 0
+		if (typeof value === 'string' && value.startsWith('0') && value.length > 1) {
+			value = value.slice(1)
 		}
 
 		if (value < 0 || value > this.end) {
