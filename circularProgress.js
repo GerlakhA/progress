@@ -45,7 +45,11 @@ export default class CircularProgress {
 
 	setValue(value) {
 		if (isNaN(Number(value))) {
-			return
+			value = 0
+		}
+
+		if (value.startsWith('0') && value.length > 1) {
+			value = 0
 		}
 
 		if (value < 0 || value > this.end) {

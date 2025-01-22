@@ -32,7 +32,7 @@
 git clone https://github.com/GerlakhA/progress.git && cd progress
 ```
 
-2. открыть index.html файл в любом браузере или с помощью расширения Live Server:
+2. открыть index.html файл в с помощью расширения Live Server
 
 ## Примечания
 
@@ -66,7 +66,7 @@ const progressBar = new CircularProgress(
 - progressBar.initEvents(): Этот метод автоматически подключает события к элементам интерфейса
 - progressBar.setValue(value): Устанавливайте значение прогресса.
 - progressBar.toggleVisibility(): Скрывайте или показывайте прогрессбар.
-- progressBar.oggleAnimation(): Включайте или выключайте анимацию прогресса.
+- progressBar.toggleAnimation(): Включайте или выключайте анимацию прогресса.
 ```
 
 4. Пример использования:
